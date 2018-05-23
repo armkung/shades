@@ -12,8 +12,12 @@ export default (lens) => do {
             else if (term.type == 'idx')
                 ix(term.value)
         }))
-    }
-    else {
+    } else if (typeof(lens) === 'function') {
+        {
+            get: lens,
+            mod: f => n => f(lens(n))
+        }
+    } else {
         lens
     }
 }
