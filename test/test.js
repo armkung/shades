@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { get, set, mod, lens, matching, all, unless, compose, inc, cons, updateAll, has, add, and, or, map, filter, greaterThan, lessThan, greaterThanEq, lessThanEq, first, rest, push, concat, append, prepend } from '../src'
+import { select as get, set, transform as mod, lens, matching, all, unless, compose, inc, cons, updateAll, has, add, and, or, map, filter, greaterThan, lessThan, greaterThanEq, lessThanEq, first, rest, push, concat, append, prepend } from '../src'
 import attr from '../src/lens-crafters/attr.js'
 import ix from '../src/lens-crafters/ix.js'
 import _ from 'lodash'
