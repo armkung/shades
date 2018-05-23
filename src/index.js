@@ -1,5 +1,5 @@
-export { mod as transform, set } from './lens-consumers/setters.js'
-export { get as select } from './lens-consumers/getters.js'
+export { mod, set } from './lens-consumers/setters.js'
+export { get } from './lens-consumers/getters.js'
 export lens from './lens-crafters/lens.js'
 export compose from './lens-consumers/compose.js'
 export matching from './traversals/matching.js'
