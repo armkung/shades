@@ -13,10 +13,10 @@ export default (lens) => do {
                 ix(term.value)
         }))
     } else if (typeof(lens) === 'function') {
-        {
+        ({
             get: lens,
             mod: f => n => f(lens(n))
-        }
+        })
     } else {
         lens
     }
